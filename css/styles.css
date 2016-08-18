@@ -335,12 +335,6 @@ html {
     height: 100%;
 }
 
-@media screen and (max-width: 768px) {
-    html {
-        height: auto;
-    }
-}
-
 body {
     position: relative;
     background-color: #fff;
@@ -349,21 +343,9 @@ body {
     height: 100%;
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        height: auto;
-    }
-}
-
 .main-container {
     width: 100%;
     height: 100%;
-}
-
-@media screen and (max-width: 768px) {
-    .main-container {
-        height: auto;
-    }
 }
 
 ::-moz-selection {
@@ -415,13 +397,6 @@ ul.no-list-style {
     line-height: 1;
 }
 
-@media screen and (max-width: 1024px) {
-    .content__tag-wrapper {
-        display: inline-block;
-        float: none;
-    }
-}
-
 .content__tag {
     background-color: #33E5BB;
     background-image: -webkit-linear-gradient(-360deg, #33E5BB 0%, #2A54F5 100%);
@@ -447,26 +422,11 @@ ul.no-list-style {
     float: left;
 }
 
-@media screen and (max-width: 1140px) {
-    .content__inner {
-        width: 100%;
-        max-width: 100%;
-    }
-}
-
 .content__inner p {
     font-size: .9375rem;
     line-height: 1.818;
     font-weight: 300;
     margin: 0;
-}
-
-@media screen and (max-width: 1024px) {
-    .content__inner {
-        width: 100%;
-        display: block;
-        float: none;
-    }
 }
 
 .content--about p,
@@ -663,22 +623,6 @@ ul.no-list-style {
     height: 100%;
 }
 
-@media screen and (max-width: 768px) {
-    .blocks {
-        -webkit-box-orient: vertical;
-        -moz-box-orient: vertical;
-        box-orient: vertical;
-        -webkit-box-direction: normal;
-        -moz-box-direction: normal;
-        box-direction: normal;
-        -webkit-flex-direction: column;
-        -moz-flex-direction: column;
-        flex-direction: column;
-        -ms-flex-direction: column;
-        height: auto;
-    }
-}
-
 .block {
     width: 50%;
     height: 100%;
@@ -692,27 +636,10 @@ ul.no-list-style {
     opacity: 0;
 }
 
-@media screen and (max-width: 768px) {
-    .block--left {
-        background-color: #4dfeee;
-        width: 100%;
-        height: 70vh;
-        position: relative;
-    }
-}
-
 .block--right {
     height: auto;
     position: absolute;
     right: 0;
-}
-
-@media screen and (max-width: 768px) {
-    .block--right {
-        width: 100%;
-        height: auto;
-        position: static;
-    }
 }
 
 .block__bgi {
@@ -739,21 +666,6 @@ ul.no-list-style {
     left: 0;
 }
 
-@media screen and (max-width: 768px) {
-    .block__bgi {
-        background-size: contain;
-        background-repeat: no-repeat;
-        z-index: 0;
-    }
-}
-
-@media screen and (max-width: 540px) {
-    .block__bgi {
-        background-size: 90%;
-        background-position: center bottom;
-    }
-}
-
 .block-content {
     margin: 30% 0 0;
 }
@@ -771,36 +683,10 @@ ul.no-list-style {
     font-size: 1.5rem;
 }
 
-@media screen and (max-width: 1320px) {
-    .block__title:nth-child(1) {
-        font-size: 1.375rem
-    };
-}
-
-@media screen and (max-width: 540px) {
-    .block__title:nth-child(1) {
-        font-size: 1rem;
-    }
-}
-
 .block__title:nth-child(2) {
     font-size: 1.25rem;
     max-width: 25rem;
     margin: .25rem auto 1.75rem;
-}
-
-@media screen and (max-width: 1320px) {
-    .block__title:nth-child(2) {
-        font-size: 1.125rem;
-        max-width: 21.25rem;
-    }
-}
-
-@media screen and (max-width: 540px) {
-    .block__title:nth-child(2) {
-        font-size: .875rem;
-        max-width: 16.875rem;
-    }
 }
 
 .block__title span {
@@ -834,12 +720,6 @@ ul.no-list-style {
     font-size: .875rem;
     text-transform: uppercase;
     color: #fff;
-}
-
-@media screen and (max-width: 540px) {
-    .block__cta a {
-        font-size: .75rem;
-    }
 }
 
 .block__cta a span {
@@ -918,23 +798,6 @@ ul.no-list-style {
     padding: 1.25rem;
 }
 
-@media screen and (max-width: 768px) {
-    .block__inner {
-        padding: 1.5625rem;
-    }
-    .block--left .block__inner {
-        -webkit-box-pack: end;
-        -moz-box-pack: end;
-        box-pack: end;
-        -webkit-justify-content: flex-end;
-        -moz-justify-content: flex-end;
-        -ms-justify-content: flex-end;
-        -o-justify-content: flex-end;
-        justify-content: flex-end;
-        -ms-flex-pack: end;
-    }
-}
-
 .block__social {
     position: relative;
     z-index: 20;
@@ -996,13 +859,6 @@ ul.no-list-style {
     width: .9375rem;
     height: .9375rem;
     fill: #fff;
-}
-
-@media screen and (max-width: 540px) {
-    .block__social__link svg {
-        width: .75rem;
-        height: .75rem;
-    }
 }
 
 .stack {
