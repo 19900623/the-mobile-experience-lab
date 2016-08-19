@@ -12,9 +12,13 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin: 0 0 1em;
 }
+.container {
+  width: 1920px;
+  margin: 0 auto;
+}
 .picture, .resume {
   position: fixed;
-  width: 50%;
+  width: 960px;
   padding: 3.125rem;
 }
 .picture {
@@ -87,20 +91,4 @@ p {
   background-image: linear-gradient(90deg, rgb(51, 229, 187) 0%, rgb(42, 84, 245) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-@media only screen and (max-width : 980px) {
-  .sidebar, .main {
-    width: 100%;
-  }
-  .main {
-    padding-right: 0;
-  }
-}
-@media only screen and (max-width : 480px) {
-  .picture {
-    display: none;
-  }
-  .resume {
-    width: 100%;
-  }
 }
