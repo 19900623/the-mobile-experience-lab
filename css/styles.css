@@ -6,6 +6,9 @@ html {
 *::before {
     box-sizing: inherit
 }
+p {
+  margin: 0 0 1em;
+}
 .picture, .resume {
   position: fixed;
   width: 50%;
@@ -14,25 +17,44 @@ html {
 .picture {
   top: 0;
   left: 0;
-  background-color: #ffc;
 }
-.stuff {
+.intro {
+  width: 400px;
+  margin: 55% auto 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 10px;
+  line-height: 1.35;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+.background {
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
   width: 100%;
   height: 100vh;
-  background-image: url("../img/raf-duo.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/raf-duo.jpg");
   background-size: cover;
   background-position: center top;
+  filter: brightness(90%);
+}
+.intro em {
+  color: #3ee6bf;
+  font-style: normal;
+  position: relative;
+  font-weight: 700;
 }
 .resume {
   top: 0;
   right: 0;
   bottom: 0;
   background-color: #fff;
-  font-size: 24px;
+  font-family: Hind, sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 1.818;
   overflow-y: scroll;
 }
 .part {
@@ -46,10 +68,23 @@ html {
 }
 .main {
   width: 90%;
+  padding-right: 25%;
+}
+.tag {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 600;
+  background-color: rgb(51, 229, 187);
+  background-image: linear-gradient(90deg, rgb(51, 229, 187) 0%, rgb(42, 84, 245) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media only screen and (max-width : 980px) {
   .sidebar, .main {
     width: 100%;
+  }
+  .main {
+    padding-right: 0;
   }
 }
 @media only screen and (max-width : 480px) {
